@@ -1,0 +1,271 @@
+:root {
+    --primary-color: #FFF;
+    --secondary-color: #999;
+    --third-color: rgb(16, 126, 36);
+    --red-color: rgb(164, 29, 14);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+    min-height: 150vh;
+    background-color: rgb(1, 5, 11);
+}
+/* Start header */
+.container header {
+    position: relative;
+    top: -0;
+    width: 100%;
+    height: 200px;
+    background-color: rgb(11, 18, 30);
+}
+.container header .heading {
+    display: flex;
+    justify-content: space-between;
+    color: var(--primary-color);
+    position: relative;
+    top: 30px;
+    margin: 0 80px;
+}
+.container header .logo h2 {
+    font-size: 1.8rem;
+}
+.container header .logo p {
+    margin: 5px 0;
+    font-size: 18px;
+    color: var(--secondary-color);
+}
+.container header .logo p span {
+    margin: 5px 0;
+    font-size: 18px;
+    color: var(--primary-color);
+}
+.container header .mode {
+    /* display: flex; */
+}
+.container header .mode i {
+    cursor: pointer;
+    font-size: 25px;
+    position: absolute;
+    margin-left: 10px;
+    transition: 0.2s;
+}
+.container header .mode #moon {
+    color: black;
+}
+.container header .mode #sun {
+    color: #FFF;
+}
+/* background:linear-gradient(to right, rgb(14, 120, 191) 15%,rgb(11, 174, 49) 100%); */
+.container header .mode p {
+    color: var(--primary-color);
+    font-size: 18px;
+}
+/* End header */
+/* Start followers */
+.container .followers .boxes {
+    display: flex;
+    justify-content: space-evenly;
+    position: relative;
+    top: -50px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.container .followers .boxes > div {
+    background-color: rgb(23, 37, 61);
+    width: 250px;
+    height: 200px;
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    border-top: 3px solid rgb(19, 89, 219);
+    transition: 0.3s;
+    box-shadow: 4px 4px 8px -6px #ffffff;
+}
+.container .followers .boxes > div:hover {
+    background-color: rgb(31, 55, 94);
+}
+.container .followers .boxes > div .top {
+    display: flex;
+}
+.container .followers .boxes > div .top i {
+    text-align: center;
+    position: relative;
+    font-size: 35px;
+    margin: 10px 0;
+    top: -20px;
+}
+.container .followers .boxes > div .top p {
+    font-size: 18px;
+    color: var(--secondary-color);
+    margin: 5px 10px;
+    width: 100%;
+    text-transform: capitalize;
+    letter-spacing: 0;
+}
+.container .followers .boxes > div h1 {
+    font-size: 35px;
+    color: #FFF;
+    position: relative;
+    top: -20px;
+    text-align: center;
+}
+.container .followers .boxes > div p {
+    font-size: 18px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    color: #777;
+    position: relative;
+    top: -10px;
+}
+.container .followers .boxes > div details summary {
+    color: var(--third-color);
+    font-weight: 600;
+    cursor: pointer;
+    margin: 5px 0;
+}
+.container .followers .boxes > div .private summary {
+    color: rgb(222, 43, 33) !important;
+}
+/* End followers */
+/* Start OverView */
+.container .overview .boxes {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    width: 90%;
+    position: relative;
+    top: 100px;
+    gap: 20px;
+}
+.container .overview .title h2 {
+    font-size: 1.8rem;
+    color: #FFF;
+    position: absolute;
+    margin: 20px 80px;
+}
+.container .overview .boxes > div {
+    width: 300px;
+    height: 130px;
+    background-color: rgb(23, 37, 61);
+    padding: 20px;
+    border-radius: 3px;
+    margin-left:15px;
+    transition: 0.3s;
+    box-shadow: 4px 4px 8px -6px #ffffff;
+    border-top: 2px solid rgba(24, 129, 227, 0.813);
+    border-left: 2px solid rgba(227, 24, 68, 0.874);
+}
+.container .overview .boxes > div:hover {
+    background-color: rgb(31, 55, 94);
+}
+.container .overview .boxes > div .top {
+    position: relative;
+    top: -20px;
+}
+.container .overview .boxes > div .top,
+.container .overview .boxes > div .bottom {
+    display: flex;
+    justify-content: space-between;
+    margin:20px 0;
+}
+.container .overview .boxes > div .top p {
+    font-size: 19px;
+    color: #777;
+    font-weight: bold;
+}
+.container .overview .boxes > div .top i {
+    font-size: 25px;
+}
+.container .overview .boxes > div .bottom h2 {
+    color: #FFF;
+}
+.container .overview .boxes > div .bottom details {
+    color: var(--third-color);
+    font-weight: 600;
+    cursor: pointer;
+}
+/* End OverView */
+/* Start Media Query */
+@media screen and (max-width: 767px) {
+    .container .overview .boxes {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        position: relative;
+        left: 22px;
+        margin: 50px 0;
+    }
+    .container .overview .title h2 {
+        width: 100%;
+        text-align: center;
+        font-size: 25px;
+        margin-left: 0%;
+    }
+    .container header .logo {
+            position: relative;
+    left: -20px;
+
+    }
+    .container header .logo h2 {
+        width: 116%;
+        font-size: 17px;
+    }
+    .container header .logo p {
+        width: 100%;
+    font-size: 13px;
+    }
+    .container header .mode {
+            width: 100%;
+    position: relative;
+    left: 50px;
+    }
+    .container header .mode p {
+            font-size: 13px;
+    }
+    .container header .mode span {
+        width: 60px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .container .overview .boxes {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        position: relative;
+        left: 22px;
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width: 850px) {
+    .container .overview .boxes {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        position: relative;
+        left: 22px;
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width: 525px) {
+    .container .overview .boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        left: 50px;
+        margin: 50px 0;
+    }
+}
+@media screen and (max-width: 380px) {
+    .container .overview .boxes {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        position: relative;
+        left: 0;
+        margin: 50px 0;
+    }
+}
+/* End Media Query */

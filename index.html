@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Link CSS -->
+  <link rel="stylesheet" href="./css/index.css">
+  <!-- Link FontAwesome CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <title>Frontend Mentor | [Dashboard Social Media]</title>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="heading">
+        <div class="logo">
+        <h2>Social Media Dashboard</h2>
+        <p>Total Followers: <span></span></p>
+      </div>
+      <div class="mode">
+        <form action="button">
+          <label id="text_mode">Dark Mode</label>
+          <i id="moon" onclick="clickMoon()" class="fa-solid fa-moon"></i>
+          <i id="sun" onclick="clickSun()" class="fa-solid fa-sun"></i>
+        </form>
+      </div>
+      </div>
+    </header>
+    <section class="followers">
+      <div class="boxes">
+        <div class="box-1 box">
+          <div class="top">
+            <i class="fa-brands fa-square-facebook" style="color: rgb(28, 90, 197);"></i>
+            <p>@nathanf</p>
+          </div>
+          <h1 id = "one">1987</h1>
+          <p>Followers</p>
+          <details>
+            <summary>12 Todays</summary>
+          </details>
+        </div>
+        <div class="box-2 box">
+          <div class="top">
+            <i class="fa-brands fa-twitter" style="color: rgb(28, 90, 197);"></i>
+            <p>@nathanf</p>
+          </div>
+          <h1 id = "two">1044</h1>
+          <p>Followers</p>
+          <details>
+            <summary>99 Today</summary>
+          </details>
+        </div>
+        <div class="box-3 box" style="border-top: 3px solid rgb(231, 39, 113);">
+          <div class="top">
+            <i class="fa-brands fa-instagram" style="color: rgb(197, 28, 93);"></i>
+            <p>@realnathanf</p>
+          </div>
+          <h1 id = "three">11000</h1>
+          <p>Followers</p>
+          <details>
+            <summary>1099 Today</summary>
+          </details>
+        </div>
+        <div class="box-4 box" style="border-top: 3px solid rgb(222, 43, 33);">
+          <div class="top">
+            <i class="fa-brands fa-youtube" style="color: rgb(222, 43, 33);"></i>
+            <p>NathanF.</p>
+          </div>
+          <h1 id = "four">8239</h1>
+          <p>Subscribers</p>
+          <details class="private">
+            <summary>144 Today</summary>
+          </details>
+        </div>
+      </div>
+    </section>
+    <section class="overview">
+      <div class="title">
+        <h2>Overview - Today</h2>
+      </div>
+      <div class="boxes">
+        <div class="box-1 box">
+          <div class="top">
+            <p>Page Views</p>
+            <i class="fa-brands fa-square-facebook" style="color: rgb(28, 90, 197);"></i>
+          </div>
+          <div class="bottom">
+            <h2>87</h2>
+            <details>
+              <summary>3%</summary>
+            </details>
+          </div>
+        </div>
+        <div class="box-2 box">
+          <div class="top">
+            <p>Likes</p>
+            <i class="fa-brands fa-square-facebook" style="color: rgb(28, 90, 197);"></i>
+          </div>
+          <div class="bottom">
+            <h2>52</h2>
+            <details>
+              <summary style="color: rgb(222, 43, 33);">2%</summary>
+            </details>
+          </div>
+        </div>
+        <div class="box-3 box">
+          <div class="top">
+            <p>Likes</p>
+            <i class="fa-brands fa-instagram" style="color: rgb(197, 28, 93);"></i>
+          </div>
+          <div class="bottom">
+            <h2>5462</h2>
+            <details>
+              <summary>2257%</summary>
+            </details>
+          </div>
+        </div>
+        <div class="box-4 box">
+          <div class="top">
+            <p>Profile Views</p>
+            <i class="fa-brands fa-instagram" style="color: rgb(197, 28, 93);"></i>
+          </div>
+          <div class="bottom">
+            <h2>52k</h2>
+            <details>
+              <summary>1375%</summary>
+            </details>
+          </div>
+        </div>
+        <div class="box-5 box">
+          <div class="top">
+            <p>Retweets</p>
+            <i class="fa-brands fa-twitter" style="color: rgb(28, 90, 197);"></i>
+          </div>
+          <div class="bottom">
+            <h2>117</h2>
+            <details>
+              <summary>303%</summary>
+            </details>
+          </div>
+        </div>
+        <div class="box-6 box">
+          <div class="top">
+            <p>Likes</p>
+            <i class="fa-brands fa-twitter" style="color: rgb(28, 90, 197);"></i>
+          </div>
+          <div class="bottom">
+            <h2>507</h2>
+            <details>
+              <summary>553%</summary>
+            </details>
+          </div>
+        </div>
+        <div class="box-7 box">
+          <div class="top">
+            <p>Likes</p>
+            <i class="fa-brands fa-youtube" style="color: rgb(222, 43, 33);"></i>
+          </div>
+          <div class="bottom">
+            <h2>107</h2>
+            <details style="color: rgb(222, 43, 33);">
+              <summary>19%</summary>
+            </details>
+          </div>
+        </div>
+        <div class="box-8 box">
+          <div class="top">
+            <p>Total Views</p>
+            <i class="fa-brands fa-youtube" style="color: rgb(222, 43, 33);"></i>
+          </div>
+          <div class="bottom">
+            <h2>1407</h2>
+            <details style="color: rgb(222, 43, 33);">
+              <summary>12%</summary>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script src="./js/index.js"></script>
+</body>
+</html>
